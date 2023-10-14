@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background: rgb(5, 51, 59);
+  color: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+}
+
+.main {
+  flex: 9;
+  background-color: rgb(74, 103, 220);
+}
+
+.sidebar {
+  flex: 3;
+}
+
+.logo {
+  margin-right: 5px;
+  font-size: 4.5rem;
+}
+
+.brand {
+  font-size: 2rem;
+}
+
+.upperside {
+  padding: 2rem;
+  border-bottom: 1px solid rgb(100, 100, 100);
+  height: 80%;
+}
+.upperside-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 2.5rem;
+}
+
+.mid-btn {
+  background: #1f518e;
+  border: none;
+  color: #fff;
+  padding: 1.5rem;
+  font-size: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+  border-radius: 0.6rem;
+}
+.query {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  background: transparent;
+  padding: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  border-radius: 0.6rem;
+  letter-spacing: 1px;
+  border: 1px solid rgba(100, 100, 100, 1);
+}
+
+.queryicons {
+  font-size: 3.2rem;
+}
+
+.lowerside {
+  padding: 2rem;
+}
+.listitems {
+  margin: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.listitemsimg {
+  margin: 0.5rem;
+  padding-right: 1rem;
+  display: inline-block;
+}
+.listitems:nth-child(2) > .listitemsimg {
+  margin-right: 0.5rem;
+}
+
+.main {
+  min-height: calc(100vh - 10rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 10rem;
+  margin-bottom: 0;
+}
+
+.chats {
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 70rem;
+  height: calc(100vh-17rem);
+}
+
+.chat > span {
+  font-size: 3rem;
+  margin-right: 1.6rem;
+}
+
+.chat {
+  margin: 1rem;
+  padding: 2rem 3rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  width: 100%;
+}
+.bot {
+  background: rgba(28, 30, 58, 1);
+  width: fit-content;
+  border-radius: 0.6rem;
+}
+
+.chatfooter {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inp {
+  padding: 0.5rem;
+  background: rgba(28, 30, 58, 1);
+}
+
+.inp {
+  width: calc(100% - 3rem);
+  outline: none;
+  padding: 1.3rem;
+  color: #fff;
+  position: relative;
+  border-radius: 0.6rem;
+}
+.inp > input,
+.send {
+  background: transparent;
+  border: none;
+}
+input {
+  width: 100%;
+  padding: 1.2rem;
+  outline: none;
+  color: #fff;
+}
+
+.send {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 2rem;
+}
