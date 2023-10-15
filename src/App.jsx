@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./index.css";
-import { sendMessage } from "./openai";
+import { sendMessage } from "./openai.js";
 
 function App() {
   const msgEnd = useRef(null);
@@ -21,6 +21,7 @@ function App() {
     // make a copy of the input
     const text = input;
     setInput("");
+
     setMessagesByApi([
       ...messagesbyApi,
       {
@@ -79,13 +80,15 @@ function App() {
                 <span>{m.isBot ? "🤖" : "💬"}</span>
                 {
                   <p className="txt">
-                    {loading ? (
-                      <span>
-                        <p className="txt">LOADING</p>
-                      </span>
-                    ) : (
-                      m.text
-                    )}
+                    <>
+                      {loading ? (
+                        <span>
+                          <p className="txt">LOADING</p>
+                        </span>
+                      ) : (
+                        <span>{m.text}</span>
+                      )}
+                    </>
                   </p>
                 }
               </div>
